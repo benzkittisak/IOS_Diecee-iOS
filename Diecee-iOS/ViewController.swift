@@ -11,8 +11,8 @@ class ViewController: UIViewController {
     @IBOutlet var diceIV1: UIImageView!
     @IBOutlet var diceIV2: UIImageView!
 
-    var randomLeftNumber = Int.random(in: 1 ..< 6)
-    var randomRightNumber = Int.random(in: 1..<6)
+    var randomLeftNumber = Int.random(in: 0 ..< 6)
+    var randomRightNumber = Int.random(in: 0..<6)
     
     var diceImage = [#imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")]
     
@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
-        //        สั่งให้เปลี่ยนรูปภาพใน Xcode 13 เราจะใช้ #imageLiteral() แบบนอ้แล้วก็เลือกรูปเลย
+        //        สั่งให้เปลี่ยนรูปภาพใน Xcode 13 เราจะใช้ #imageLiteral() แล้วก็เลือกรูปเลย
         //        diceIV1.image = #imageLiteral(resourceName: "DiceSix")
         //        ปรับค่า aplha ของ element ก็ทำได้นา
         //        diceIV1.alpha = 0.5
@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         diceIV1.image = diceImage[randomLeftNumber]
         diceIV2.image = diceImage[randomRightNumber]
 //        สุ่มตัวเลขตั้งแต่ 1 ถึง 5 นั่นแหละ
-        randomLeftNumber = Int.random(in: 1 ..< 6)
-        randomRightNumber = Int.random(in: 1 ..< 6)
+        randomLeftNumber = Int.random(in: 0 ..< 6)
+        randomRightNumber = Int.random(in: 0 ..< 6)
     }
 }
