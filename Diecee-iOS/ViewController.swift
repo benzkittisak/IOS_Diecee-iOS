@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     @IBOutlet var diceIV1: UIImageView!
     @IBOutlet var diceIV2: UIImageView!
 
-    var diceImage = [#imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")]
+    let diceImage = [#imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")]
     
     //    เมื่อ Application มันโหลดขึ้นมาจะให้ทำอะไร เหมือน onCreate ใน Android แหละ
     override func viewDidLoad() {
